@@ -1,11 +1,11 @@
 # CommonJS Patterns
 
-TODO: Explore the pros and cons of using CommonJS (instead of ES6 modules(?))
+TODO: Explore the pros and cons of using CommonJS (instead of ESM modules(?))
 
 e.g.
 - CommonJS loads modules synchronously
 - Browsers do not support CommonJS per se
-+ CommonJS is baked into NodeJS
++ CommonJS is baked into Node.js
 + (module bundlers(?))
 
 ## Folder contains the following projects
