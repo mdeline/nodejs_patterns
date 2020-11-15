@@ -1,8 +1,8 @@
 {
-  "name": "module_definition_patterns",
+  "name": "executing_sourcecode",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Demonstrates how to use the fs module's readFileSync together with eval to run print_quote.js's source code.",
+  "main": "execute.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
