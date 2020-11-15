@@ -1,4 +1,4 @@
-// fs-module is needed in order to access the underlying operating system and its file system
+// fs-module is needed in order to access the underlying operating system and its file system.
 const fs = require('fs')
 
 /*
