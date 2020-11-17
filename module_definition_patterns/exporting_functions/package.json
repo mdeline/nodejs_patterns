@@ -1,0 +1,15 @@
+{
+  "name": "exporting_functions",
+  "version": "1.0.0",
+  "description": "Yksi suosituimmista tavoista määritellä moduuleja. Tässä mallissa koko `module.exports`-muuttujaan sijoitetaan vain yksi funktio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true
+}
