@@ -5,5 +5,5 @@ eri muuttujien kesken (ei kuitenkaan korvaa Singletonia vakaudessa).
 
 ## Run
 ```bash
-node index.js
+node replicator.js
 ```
