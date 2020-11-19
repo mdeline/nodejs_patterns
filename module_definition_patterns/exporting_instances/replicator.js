@@ -1,7 +1,7 @@
 const replicator_A = require('./replica.js')
 const replicator_B = require('./replica.js')
 
-// Run replicator 'A' fist then switch over to replicator 'B'.
+// Run replicator 'A' first then switch over to replicator 'B'.
 replicator_A.replicate()
 replicator_A.replicate()
 replicator_A.replicate()
