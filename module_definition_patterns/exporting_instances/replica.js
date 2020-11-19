@@ -10,7 +10,7 @@ class Replica {
     the original process (e.g. creates a copy of the original painting by using
     the same methods).
 
-    Here, we are building a new Android by by using the same assembly line.
+    Here, we are building a new Android by using the same assembly line.
   */
   replicate() {
     this.copyCount++
