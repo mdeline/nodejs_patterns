@@ -1,0 +1,15 @@
+{
+  "name": "monkey_patching",
+  "version": "1.0.0",
+  "description": "Globaarin nimiavaruuden tai jo olemassaolevan moduulin muokkaaminen. Voi olla hyödyllistä mm. testauksessa (ks. esim. Nock, joka mokkaa http-vastauksia patchaamalla Node.js:n http-moduulia).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true
+}
