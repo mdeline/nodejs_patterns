@@ -8,5 +8,7 @@ ESM-moduulit täytyy tuoda tiedostopäätteineen, esim. import './irony.js' (Com
 
 ### Default Exports
 
-### Mixed Exports
+### Namespace Imports
+
+### Mixed Imports
 
