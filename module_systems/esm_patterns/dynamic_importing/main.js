@@ -25,6 +25,4 @@ const translationModule = `./${selectedLanguage}_lang.js`
 import(translationModule)
     .then((module) => {
         console.log(module.REQUEST)
-    }
-)
-
+    })
