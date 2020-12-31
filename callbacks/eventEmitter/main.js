@@ -1,7 +1,6 @@
 /** 
- * Esimerkit tapahtumankuuntelijoiden lisäämisestä ja tapahtuman 
- * lähettämisestä kuuntelijoille.
- * */
+ * Demonstroi kuinka EventEmitteriä voidaan käyttää tapahtumien kuunteluun.
+*/
 
 import { EventEmitter } from 'events'
 
