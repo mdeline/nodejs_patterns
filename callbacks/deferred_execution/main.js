@@ -1,14 +1,12 @@
 import { readFile } from 'fs'
 
-// simuloi välimuistia
 const cache = new Map()
 
 function readAsync (filename, callback) {
     if (cache.has(filename)) {
-        process.nextTick(() => callback(cache.get(filename))) // cache.get on synkroninen
+        process.nextTick(() => callback(cache.get(filename))) // map.get on synkroninen
     } else {
-        // readfile on asynkroninen
-        readFile(filename, 'utf8', (err, data) => {
+        readFile(filename, 'utf8', (err, data) => { //readFile() on asynkroninen
             if (err) {
                 callback(err) 
             } else {
@@ -19,12 +17,10 @@ function readAsync (filename, callback) {
     }
 }
 
-console.log(cache)
-readAsync('./secret.txt', data => console.log(data))
-
-setTimeout(() => { // Pakko käyttää asyncia tulostukseen, koska yllä oleva tiedostonluku on niin hidasta
-    console.log(cache)
+console.log(cache, '\n')
+readAsync('./secret.txt', data => console.log(data, '\n'))
+setTimeout(() => { // Pakko käyttää asyncia tulostukseen, koska tiedostonluku on niin hidasta
+    console.log(cache, '\n')
 }, 100)
 
-// Virheenkäsittelyn testaamista
-readAsync('./thisFileDoesNotExist.txt', data => console.log(data))
+readAsync('./thisFileDoesNotExist.txt', err => console.log(err, '\n'))
