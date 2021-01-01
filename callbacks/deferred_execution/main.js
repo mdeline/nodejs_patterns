@@ -6,7 +6,7 @@ function readAsync (filename, callback) {
     if (cache.has(filename)) {
         process.nextTick(() => callback(cache.get(filename))) // map.get on synkroninen
     } else {
-        readFile(filename, 'utf8', (err, data) => { //readFile() on asynkroninen
+        readFile(filename, 'utf8', (err, data) => { // readFile() on asynkroninen
             if (err) {
                 callback(err) 
             } else {
