@@ -9,9 +9,12 @@ function readAsync (filename, callback) {
     } else {
         // readfile on asynkroninen
         readFile(filename, 'utf8', (err, data) => {
-            if (err) throw err
-            cache.set(filename, data)
-            callback(data)
+            if (err) {
+                callback(err) 
+            } else {
+                cache.set(filename, data)
+                callback(data)
+            }
         })
     }
 }
@@ -19,6 +22,9 @@ function readAsync (filename, callback) {
 console.log(cache)
 readAsync('./secret.txt', data => console.log(data))
 
-setTimeout(() => { // Pakko käyttää asyncia tulostukseen, koska ylempi tiedostonluku on niin hidasta
+setTimeout(() => { // Pakko käyttää asyncia tulostukseen, koska yllä oleva tiedostonluku on niin hidasta
     console.log(cache)
 }, 100)
+
+// Virheenkäsittelyn testaamista
+readAsync('./thisFileDoesNotExist.txt', data => console.log(data))
