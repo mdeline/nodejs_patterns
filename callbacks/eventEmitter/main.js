@@ -1,20 +1,22 @@
-/** 
- * Demonstroi kuinka EventEmitteriä voidaan käyttää tapahtumien kuunteluun.
-*/
-
 import { EventEmitter } from 'events'
 
 const emitter = new EventEmitter()
 
-// Tapahtuman rekisteröinti tapahtumankuuntelijalle
-emitter.on('The Ballad of John and Yoko', () => {
-    console.log(`
-    Finally made the plane into Paris
-    Honeymooning down by the Seine
-    Peter Brown called to say
-    "You can make it OK
-    You can get married in Gibraltar near Spain"`)
+function provoke() {
+    console.log("What are you going to do when Hip-Hop goes out?")
+}
+function serve() {
+    console.log("Hip hop is an attitude, it's right here, it's how you feel, it's a style. So, it can't go out.")
+}
+
+/** Tapahtumien rekisteröinti */
+emitter.on('insecurity', () => {
+    provoke()
+    emitter.emit('negativity')
+})
+emitter.on('negativity', () => {
+    serve()
 })
 
-// Tapahtuman lähettäminen tapahtumankuuntelijalle
-emitter.emit('The Ballad of John and Yoko')
+/** Tapahtuman lähettäminen */
+emitter.emit('insecurity')
