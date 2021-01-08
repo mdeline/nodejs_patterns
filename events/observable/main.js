@@ -36,7 +36,7 @@ dsWiki
     .addPage('./crystal_sage.txt')
     .addPage('./pontiff.txt')
     .find(/outrider/i)
-    .on('pageread', page => console.log(`Read "${page}`))
+    .on('pageread', page => console.log(`Read ${page}`))
     .on('found', (file, match) => console.log(`Matched "${match}" in file ${file}`))
     .on('error', err => console.error(`Error emitted ${err.message}`))
 
