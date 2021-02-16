@@ -5,7 +5,7 @@ function iterateSeries(collection, iteratorCallback, finalCallback) {
      }
     function iterate(index) {
         if (index === collection.length) {
-            return asyncOperation(finalCallback) // Lopuksi suoritetaan iteroinnin loppumista merkitsevä funktio, vähän sama idea kuin lähettäisi eventin tapahtuman valmistumisesta
+            return asyncOperation(finalCallback) // Lopuksi suoritetaan iteroinnin loppumista merkitsevä funktio, vähän sama idea kuin lähettäisi signaalin tapahtuman valmistumisesta
         }
         asyncOperation(iteratorCallback, collection[index]) 
         iterate(index + 1) // Suoritusjärjestys pidetään kurissa rekursiolla ja nextTickillä
