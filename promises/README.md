@@ -5,7 +5,7 @@ Promise on olio, joka kuljettaa sen sisältämän asynkronisen funktion tila- ja
 Promise-olion tilat:
 * Pending: asynkroninen operaatio on kesken
 * Fulfilled: operaatio onnistui, tällöin puhutaan että operaatio on 'Settled'
-* Rejected: operaatio aiheutti virhetilanteen, myös tällöin operaatio on'Settled'
+* Rejected: operaatio aiheutti virhetilanteen, myös tällöin operaatio on 'Settled'
 
 Promise/A+ -standardilla rakennettuja olioita, joilla on .then -metodi kutsutaan thenableiksi ja näiden olioiden odotetaan käyttäytyvän promisenomaisesti. Standardi ja thenable-oliot mahdollistavat eri promise-implementaatioiden (esim. eri kirjastojen palauttamien olioiden) ketjuttamisen yhteen.
 
