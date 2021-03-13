@@ -1,15 +1,11 @@
 {
   "name": "whistle_blower",
-  "version": "1.0.0",
-  "description": "",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "type": "module",
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "mathjs": "^9.3.0"
   }
 }
