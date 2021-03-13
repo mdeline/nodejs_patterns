@@ -1,0 +1,11 @@
+{
+  "name": "promisification",
+  "main": "main.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "mathjs": "^9.3.0"
+  }
+}
