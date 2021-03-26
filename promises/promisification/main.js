@@ -1,7 +1,7 @@
 import { randomBytes } from 'crypto'
-import * as p from './promisification.js' // In the real world you should use the promisify() function of the util-package instead
+import { promisify } from './promisification.js' // In the real world you should use the promisify() function of the util-package instead
 
-const randomBytesPromisified = p.promisify(randomBytes)
+const randomBytesPromisified = promisify(randomBytes) // randomBytes is normally callback-based
 
 randomBytesPromisified(20)
     .then(buffer => {
