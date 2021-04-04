@@ -1,0 +1,8 @@
+{
+  "name": "async_await",
+  "main": "main.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  }
+}
