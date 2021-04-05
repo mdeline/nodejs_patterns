@@ -5,6 +5,7 @@
   "engines": {
     "node": ">=14"
   },
+  "engineStrict": true,
   "dependencies": {
     "mathjs": "^9.3.0"
   }

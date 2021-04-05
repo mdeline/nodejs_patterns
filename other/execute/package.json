@@ -1,13 +1,7 @@
 {
   "name": "execute",
-  "version": "1.0.0",
   "description": "Demonstrates how to use the fs module's readFileSync together with eval to run source code.",
   "main": "execute.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "engines": {
     "node": ">=14"
   },
